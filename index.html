@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="ImageToStl.com_uploads_files_5014825_bat_low_poly.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="agx" poster="poster.webp" shadow-intensity="1.33" exposure="0.88" shadow-softness="0.57" camera-orbit="-27.13deg 74.62deg 0.4881m" field-of-view="30deg">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.07768907322417m 0.08936450546166749m 0.0032879373366564435m" data-normal="0.0272534263336171m -0.5956473107835158m 0.8027836146244166m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Son los únicos mamíferos que pueden volar</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-0.016574725425646003m 0.041048917210516345m -0.020741540641276812m" data-normal="-0.5969256699358686m -0.5122422021913074m 0.6174849559833941m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Son muy sociables y pueden compartir refugios con miles o millones de otros murciélagos</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="0.01400457730206639m 0.0990080047490913m 0.022258665781852482m" data-normal="0.3025821375736363m -0.47927349944183917m 0.8238573679673822m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Tienen un buen oído y pueden calcular distancias a partir de los ecos</div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="-0.08550019672855645m 0.09226518819698318m -0.004559363209299061m" data-normal="0.0145378882888155m 0.7310463331694007m -0.6821729315677042m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Algunas especies de murciélagos hibernan durante el invierno</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
